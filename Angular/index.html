@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app='coffee'>
+<head>
+  <title>How Hipster Is This Coffee Shop?</title>
+  <link rel="shortcut icon" href="coffee.png"/>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1>How Hipster Is This Coffee Shop?</h1>
+  <div class="page">
+    <form id="textForm" name="coffeeForm" novalidate>
+      <input type="text" ng-model='name' id="coffeeName" placeholder="e.g. Sightglass, Blue Bottle, etc..."/>
+      <!-- required ng-class="{'error': coffeeForm.$invalid && coffeeForm.$dirty}"/> 
+      ng-model="coffeeShop" -->
+      <!-- <p>{{coffeeShop}}</p> -->
+      <!-- <button><img src="coffee.png" id="icon" alt="Submit"></button> -->
+    </form>
+    <div ng-controller="ShopsController">
+      <div ng-repeat="shop in shops | filter: name">
+        <img class ="shop" ng-src="../images/{{shop.name}}.png" />
+ <!--        <h1>{{shop.name}}</h1> -->
+        <div class="container">
+          <p>Wood rating: <span>{{shop.wood}}</span></p>
+          <p>Mac/Macbook rating: <span>{{shop.mac}}</span></p>
+          <p>Almond milk rating: <span>{{shop.almondMilk}}</span></p>
+          <p>Pour Over rating: <span>{{shop.pourOver}}</span></p>
+          <p>Single Origin rating: <span>{{shop.singleOrigin}}</span></p>
+          <p>Natural Lighting rating: <span>{{shop.naturalLighting}}</span></p>
+          <p>Rustic rating: <span>{{shop.rustic}}</span></p>
+          <p>Artisan rating: <span>{{shop.artisan}}</span></p>
+        </div>
+    </div>
+</body>
+</html>
