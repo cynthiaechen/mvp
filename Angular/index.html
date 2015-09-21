@@ -22,7 +22,7 @@
       <!-- <button><img src="coffee.png" id="icon" alt="Submit"></button> -->
     </form>
     <div ng-controller="ShopsController">
-      <div ng-repeat="shop in shops | filter: name">
+      <div ng-if="name" ng-repeat="shop in shops | filter: name">
         <img class ="shop" ng-src="../images/{{shop.name}}.png" />
  <!--        <h1>{{shop.name}}</h1> -->
         <div class="container">

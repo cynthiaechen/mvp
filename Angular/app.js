@@ -14,7 +14,7 @@ angular.module('coffee', [])
     naturalLighting: 13,
     rustic: 28,
     artisan: 28,
-    total: 1584
+    total: 1584,
   },
   {
     name: 'Blue Bottle',
