@@ -1,4 +1,4 @@
-# Project Name #
+# How Hipster Is This Coffee Shop? #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Web Application for people who appreciate or argue over hipster coffee shops
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > Coffee drinkers who want to know the most hipster coffee shop in San Francisco.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Have you ever wondered which coffee shop in San Francisco is the most hipster? Then, this web app is for you! This product determines and displays the "hipster-ness" of the top 4 coffee shops in San Francisco based on Yelp reviews. Now, you no longer have to argue with your friends which coffee shop is the most hipster.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Coffee shop aficionados, tourists, and normal people often experience the problem of having to determine which coffee shop is the most hipster.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > This product elegantly solves this problem by analyzing the "hipster-ness" of the top four coffee shops in SF. An algorithm determines the "hipster-ness" of each coffee shop based on the frequency of certain hipster qualities mentioned in each coffee shop's Yelp reviews.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "How Hipster is this Coffee Shop finally answers the difficult question hundreds of people having been asking for ages"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Just type in one of the top four coffee shops in SF to see how hipster it is!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "This web application finally put an end to the ongoing argument between me and my hipster friends about which coffee shop is the most hipster. Now we can get on with our lives... finally" 
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Now that you know which coffee shop is the most hipster, you can get on with your life!
