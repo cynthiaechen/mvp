@@ -2,7 +2,7 @@
 <html ng-app='coffee'>
 <head>
   <title>How Hipster Is This Coffee Shop?</title>
-  <link rel="shortcut icon" href="coffee.png"/>
+  <link rel="shortcut icon" href="../images/coffee.png"/>
   <link rel="stylesheet" href="stylesheet.css" />
   <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
@@ -22,6 +22,9 @@
       <!-- <button><img src="coffee.png" id="icon" alt="Submit"></button> -->
     </form>
     <div ng-controller="ShopsController">
+      <div ng-show="name.toLowerCase() === 'starbucks'"><p>Starbucks isn't hipster! What are you thinking?!?</p></div>
+      <div ng-show="name.toLowerCase() === 'peets'"><p>Sorry, Peets isn't hipster...</p></div>
+      <div ng-show="name.toLowerCase() === 'philz'"><p>Nice try, Philz is delicious! But alas, it is not hipster enough for this list</p></div>
       <div ng-if="name" ng-repeat="shop in shops | filter: name">
         <img class ="shop" ng-src="../images/{{shop.name}}.png" />
  <!--        <h1>{{shop.name}}</h1> -->
