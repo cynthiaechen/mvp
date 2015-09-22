@@ -8,6 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+  <script src="bower_components/underscore/underscore.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
@@ -28,14 +29,20 @@
  <!--        <h1>{{shop.name}}</h1> -->
         <div class="container">
           <h2>{{shop.message}}</h2>
-          <p>Wood rating: <span>{{shop.wood}}</span></p>
-          <p>Mac/Macbook rating: <span>{{shop.mac}}</span></p>
-          <p>Almond milk rating: <span>{{shop.almondMilk}}</span></p>
-          <p>Pour Over rating: <span>{{shop.pourOver}}</span></p>
-          <p>Single Origin rating: <span>{{shop.singleOrigin}}</span></p>
-          <p>Natural Lighting rating: <span>{{shop.naturalLighting}}</span></p>
-          <!-- <p>Rustic rating: <span>{{shop.rustic}}</span></p>
-          <p>Artisan rating: <span>{{shop.artisan}}</span></p> -->
+          <p>Wood rating: <span ng-repeat="wood in shop.wood track by $index"><img class="icon" src="images/wood-coffee.png" /></span></p>
+          <p>Macbook rating: <span ng-repeat="mac in shop.mac track by $index"><img class="icon" src="images/macbook.png" /></span></p>
+          <p>Almond Milk rating: <span ng-repeat="almond in shop.almondMilk track by $index"><img class="icon" src="images/almond-milk.png" /></span></p>
+          <p>Pour Over rating: <span ng-repeat="pour in shop.pourOver track by $index"><img class="icon" src="images/pourover.png" /></span></p>
+          <p>Single Origin rating: <span ng-repeat="single in shop.singleOrigin track by $index"><img class="icon" src="images/single-origin.png" /></span></p>
+          <p>Natural Lighting rating: <span ng-repeat="light in shop.naturalLighting track by $index"><img class="icon" src="images/lighting.png" /></span></p>
+          <p>Glasses rating: <span ng-repeat="glasses in shop.rimmedGlasses track by $index"><img class="icon" src="images/glasses.png" /></span></p>
+          <p>Fixie rating: <span ng-repeat="fixie in shop.fixie track by $index"><img class="icon" src="images/bike.png" /></span></p>
+          <!-- <p>Wood rating: <img class="icon" src="images/wood-coffee.png" /><span> x {{shop.wood}}</span></p>
+          <p>Mac/Macbook rating: <img class="icon" src="images/macbook.png" /><span> x {{shop.mac}}</span></p>
+          <p>Almond milk rating: <img class="icon" src="images/almond-milk.png" /><span> x {{shop.almondMilk}}</span></p>
+          <p>Pour Over rating: <img class="icon" src="images/pour-over.png" /><span> x {{shop.pourOver}}</span></p>
+          <p>Single Origin rating: <img class="icon" src="images/single-origin.png" /><span> x {{shop.singleOrigin}}</span></p>
+          <p>Natural Lighting rating: <img class="icon" src="images/lighting.png" /><span> x {{shop.naturalLighting}}</span></p> -->
         </div>
     </div>
 </body>
