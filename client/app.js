@@ -15,6 +15,8 @@ angular.module('coffee', [])
     rustic: 28,
     artisan: 28,
     total: 1584,
+    message: 'You found the second most hipster coffee shop in SF! \
+    Sip on a pour over with a splash of almond milk as you appreciate the wooden decor and boar heads!'
   },
   {
     name: 'Blue Bottle',
@@ -27,7 +29,10 @@ angular.module('coffee', [])
     naturalLighting: 12,
     rustic: 0,
     artisan: 7,
-    total: 1668
+    total: 1668,
+    message: 'You found the least hipster of the top coffee shops in SF. \
+    Be a part of the trendy, sophisticated crowd as you sip on the daily \
+    single-origin blend or a New Orleans iced coffee.'
   },
   {
     name: 'Ritual',
@@ -40,7 +45,9 @@ angular.module('coffee', [])
     naturalLighting: 5,
     rustic: 4,
     artisan: 10,
-    total: 1650
+    total: 1650,
+    message: 'You found the third most hipster coffee shop in SF! \
+    Treat yourself to a single-origin capuccino while you work on your macbook air.'
   },
   {
     name: 'Sightglass',
@@ -53,7 +60,10 @@ angular.module('coffee', [])
     naturalLighting: 24,
     rustic: 20,
     artisan: 12,
-    total: 1650
+    total: 1650,
+    message: 'You found the most hipster coffee shop in SF! \
+    Savor a single-origin almond milk latte while \
+    sitting in the loft and enjoying the wooden decor and natural lighting!'
   }];
 });
 
