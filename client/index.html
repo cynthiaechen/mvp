@@ -2,9 +2,10 @@
 <html ng-app='coffee'>
 <head>
   <title>How Hipster Is This Coffee Shop?</title>
-  <link rel="shortcut icon" href="../images/coffee.png"/>
+  <link rel="shortcut icon" href="images/coffee.png"/>
   <link rel="stylesheet" href="stylesheet.css" />
   <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
   <script src="lib/angular/angular.js"></script>
@@ -23,7 +24,7 @@
       <div class="response" ng-show="name.toLowerCase() === 'peets'"><p>Sorry, Peets isn't hipster...</p></div>
       <div class="response" ng-show="name.toLowerCase() === 'philz'"><p>Nice try, Philz is delicious! But alas, it is not hipster enough for this list</p></div>
       <div ng-if="name" ng-repeat="shop in shops | filter: name">
-        <img class ="shop" ng-src="../images/{{shop.name}}.png" />
+        <img class ="shop" ng-src="images/{{shop.name}}.png" />
  <!--        <h1>{{shop.name}}</h1> -->
         <div class="container">
           <p>Wood rating: <span>{{shop.wood}}</span></p>

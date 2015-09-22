@@ -1,7 +1,7 @@
 angular.module('coffee', [])
 
 .controller('ShopsController', function ($scope) {
-  // $scope.shops = ['Blue Bottle', 'Four Barrel', 'Ritual', 'Sightglass'];
+  // $scope.shops.name = ['Blue Bottle', 'Four Barrel', 'Ritual', 'Sightglass'];
 
   $scope.shops = [{
     name: 'Four Barrel',
@@ -55,9 +55,5 @@ angular.module('coffee', [])
     artisan: 12,
     total: 1650
   }];
-
-  
-
-
 });
 

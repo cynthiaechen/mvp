@@ -6,6 +6,7 @@ body {
 h1 {
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   font-family: 'Wire One', sans-serif;
+/*  font-family: 'Quicksand', sans-serif;*/
   font-size: 100px;
   text-align: center;
   margin: 35px auto;
@@ -29,7 +30,7 @@ input[type='text'] {
   background-color: #FFFFFF;
   color: #000000;
   font-family: 'Amatic SC', cursive;
-  font-size: 24px;
+  font-size: 32px;
   min-width: 350px;
   padding: 4px 6px;
   margin: 0 auto;
